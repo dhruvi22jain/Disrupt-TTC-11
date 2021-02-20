@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Xiaomi smart bands</title>
+    <link rel="stylesheet" href="homepage.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="index.js"></script>
+    <link href= "https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet rel="stylesheet">
+    <link href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!---header-->
+    <div class = "header">
+        <div class = "container">
+            <div class = "navbar">
+                <div class = "logo">
+                    <img src = "img/logo.png" width="50px">      
+                </div>
+
+<!-----menu items-->
+                <nav>
+                    <ul id= "MenuItems">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Signup</a></li>
+                        <li><a href="cart/products.html">Products</a></li>
+                    </ul>
+                </nav>
+                <img src = "img/menu.jpg" class="menu-icon" width="50px" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class = "col-2">
+                    <h1><p>MI SMART BAND...Count the Move! </p></h1>
+
+                </div>
+                </div>
+                    <div class="col-2">
+                        <table><tr>
+                            <td>
+                            <video class="video" width="750" controls>
+                            <source src="img/video.mp4" type="video/mp4">
+                            </video></td>
+                            <td><img src= "img/image.jpg" class="photo" width = "450px">
+                            <a href = "cart/products.html" class = "explore-btn">Explore Now</a></td>
+                        </tr></table>
+                </div>
+        </div>
+    
+
+    <div class = "categories">
+        <h1><p>Give your Workout a new style!</p></h1>
+        <div class = "small-container">
+            <div class = "row">
+                
+            <div class = "col-3">   
+                <img src ="img/1.jpg" height= "400px">
+            </div>
+            <div class = "col-3">
+                <img src ="img/2.jpg" height= "300px">
+            </div>
+            <div class = "col-3">
+                <img src ="img/3.jpg" height= "400px">
+            </div>
+        </div>
+    </div>
+    </div>
+
+<!--------------Reviews------------>
+
+    <div class = "Testimonial">
+        <div class = "row">
+            <table>
+            <div class = "col-3">
+                <h2><u>Reviews</u></h2>
+                
+                <div class="review">
+                    <b><i><u>Sean Parker</u></i></b>
+    
+                    <img src = "img/user-1.png">
+                
+                <div class = "review-1">
+                    <i>"The MI Smart band has opened a window to a better lifestyle. 
+                    It accurately records your health data and 24/7 heart rate monitoring helps 
+                    give early warnings if there is any minor change keeping you safe and healthy."</i>
+                </div>
+            <div>
+                <b><i><u>Raj Thakker</u></i></b>
+                <img src ="img/user-2.png">
+                <i>"When the older version just launched, I was skeptical whether to buy it. 
+                But after a few months, I was so impressed by it. It is easy to use and I was eagerly 
+                waiting for the new launch. I would really reccomend this for everyone."</i>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+<!---------footer------->
+<div class = "footer">
+    <div class ="container">
+        <div class="row">
+            <div class= "footer-col-1">
+                <img src = "img/logo1.png" height = "100px" width="200">
+           </div>
+            <div class= "footer-col-2">
+            <p><h2>
+                CONTACT US:
+                Email- customercare@xiaomi.co.index
+                Phone- +91 9845622145
+            </h2></p></div>
+            <div class= "footer-col-2">
+            <h3>Follow us for for latest updates on our new products.
+                <ul>
+                    <li>Instagram 
+                        <img src = "img/instagram.png" height="32px">
+                    </li>
+                    <li>Facebook
+                        <img src="img/facebook.png" height= 32px>
+                    </li>
+                    <li>Twitter
+                        <img src="img/twitter.png" height="32px">
+                    </li>
+                </ul></h3>
+            </div>
+            </div>
+        </div>
+     
+    </div>
+
+</div>
+
+<!---------making the screen interactive (reduce screen size see the menu)--------------------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+MenuItems.style.maxHeight = "0px"
+
+function menutoggle(){
+    if(MenuItems.style.maxHeight=="0px"){
+        MenuItems.style.maxHeight = "200px";
+    }
+    else{
+        MenuItems.style.maxHeight = "0px"
+    }
+
+}
+
+</script>
+</body>
+</html>
+
